@@ -137,7 +137,7 @@
                 <span class="glyphicon glyphicon-plus"></span><a href="dict_add.jsp" style="color: white">添加</a>
             </button>
             <input type="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"
-                   value="更新" onclick="editStudio()">
+                   value="修改" onclick="editStudio()">
 
             <input type="Submit" class="btn btn-danger btn-lg" onclick="del()"
                    value="删除">
