@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seat</title>
+    <link rel="stylesheet" href="../CSS/bs.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<script src="../JS/jquery.min.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+
+<div class="header">
+    <div class="row">
+        <div class="font col-md-9">TTMS</div>
+        <div class="signState col-md-3">
+            <i class="fa fa-user-circle"></i>
+            <a href="#">管理员 |</a>
+            <a href="signIn.html">登出</a>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="studio.html">演出厅管理</a></li>
+                <li><a href="user.html">用户管理</a></li>
+                <li class="dropdown-submenu"><a href="seat.html">座位管理</a>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a>1号厅</a></li>
+                        <li><a>2号厅</a></li>
+                        <li><a>3号厅</a></li>
+                        <li><a>4号厅</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="col-md-9">
+
+            <h2 class="title">管理座位</h2>
+
+            <div class="demo clearfix">
+
+                <!---左边座位列表----->
+
+                <div id="seat_area">
+
+                    <div class="front">屏幕</div>
+
+                </div>
+
+                <!---右边----->
+
+                <div class="booking_area">
+
+                    <input type="button" class="btn btn-primary" value="保存更改" onclick="saveSeatStatus()">
+                    <div id="legend"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../JS/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../JS/jquery.seat-charts.min.js"></script>
+
+    <script type="text/javascript" src="../JS/seatStatus.js"></script>
+
+</div>
+</body>
+</html>

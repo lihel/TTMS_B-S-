@@ -1,0 +1,283 @@
+
+body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sign {
+    margin-top: 30%;
+    border: solid 1px #9d9d9d;
+    border-radius: 20%;
+    background-color: rgba(139, 135, 157, 0.42);
+}
+
+.container {
+    width: 35%;
+}
+
+.header {
+    border: groove;
+}
+
+.signbutt {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.pass {
+    padding-top: 5%;
+}
+
+/*studio*/
+
+.font {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 1%;
+    color: rgba(31, 45, 178, 0.8);
+    text-shadow: 0 -1px 1px #FFF, -1px 0 1px #FFF, 1px 0 1px #000;
+}
+
+.signState {
+    font-size: large;
+    margin-top: 2%;
+
+}
+
+.select {
+    margin-top: 4%;
+    margin-left: 25%;
+    border-radius: 15px;
+    width: 30%;
+    outline: none;
+    padding-left: 8px;
+}
+
+.tableLoaction {
+    margin-top: 8%;
+}
+
+.pointOut{
+    color: #cc403a;
+}
+
+.hw-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.hw-layer-wrap {
+    box-sizing: border-box;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -285px;
+    border-radius: 3px;
+    background-color: #415369;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.12);
+    padding: 45px 50px;
+}
+
+.hwLayer-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.hw-layer-wrap .hw-icon {
+    color: #b4d8f3;
+    font-size: 86px;
+    text-align: center;
+}
+
+.hw-layer-wrap h4 {
+    margin: 5px 0 30px;
+    font-size: 24px;
+    color: #383c3e;
+}
+
+.hw-layer-wrap p {
+    margin: 30px 0;
+    line-height: 22px;
+    color: #595d60;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hw-layer-wrap {
+        width: 350px;
+        margin-left: -175px;
+        margin-top: -200px;
+        padding: 45px 50px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .hw-layer-wrap {
+        width: 250px;
+        margin-left: -125px;
+        padding: 25px 30px;
+    }
+}
+
+/*user*/
+
+.tableUser {
+    margin-top: 6%;
+}
+
+
+.front {
+    width: 75%;
+    margin: 5px 32px 45px 32px;
+    background-color: #f0f0f0;
+    color: #666;
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.booking_area {
+    float: right;
+    position: relative;
+    width: 200px;
+    height: 450px;
+}
+
+.booking_area h3 {
+    margin: 5px 5px 0 0;
+    font-size: 16px;
+}
+
+.booking_area p {
+    line-height: 26px;
+    font-size: 16px;
+    color: #999
+}
+
+.booking_area p span {
+    color: #666
+}
+
+div.seatCharts-cell {
+    color: #182C4E;
+    height: 30px;
+    width: 30px;
+    line-height: 25px;
+    margin: 3px;
+    float: left;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+div.seatCharts-seat {
+    color: #fff;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.seatCharts-row {
+    height: 40px;
+}
+
+div.seatCharts-seat.available {
+    background-color: #87a1de;
+}
+
+div.seatCharts-seat.focused {
+    background-color: #516eb4;
+    border: none;
+}
+
+div.seatCharts-seat.selected {
+    background-color: #e67a74;
+}
+
+div.seatCharts-seat.unavailable {
+    background-color: #472B34;
+    cursor: not-allowed;
+}
+
+div.seatCharts-container {
+    border-right: 1px dotted #adadad;
+    width: 73%;
+    padding: 20px;
+    float: left;
+}
+
+div.seatCharts-legend {
+    padding-left: 0px;
+    position: absolute;
+    bottom: 16px;
+}
+
+ul.seatCharts-legendList {
+    padding-left: 0px;
+}
+
+.seatCharts-legendItem {
+    float: left;
+    width: 90px;
+    margin-top: 10px;
+    line-height: 2;
+    list-style: none;
+}
+
+span.seatCharts-legendDescription {
+    margin-left: 5px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.checkout-button {
+    display: block;
+    width: 80px;
+    height: 24px;
+    line-height: 20px;
+    margin: 10px auto;
+    border: 1px solid #999;
+    font-size: 14px;
+    cursor: pointer
+}
+
+#seats_chose {
+    max-height: 150px;
+    overflow-y: auto;
+    width: 200px;
+}
+
+#seats_chose li {
+    float: left;
+    width: 72px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #d3d3d3;
+    background: #f7f7f7;
+    margin: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center
+}
+
+#legend {
+    margin: 0 auto;
+}

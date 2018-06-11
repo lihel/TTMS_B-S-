@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign in</title>
+    <link rel="stylesheet" href="../CSS/bs.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="panel panel-primary sign">
+
+        <h3 class="text-center">欢迎登陆TTMS</h3>
+
+        <form action="studio.html" onsubmit="return　checkUser()">
+
+            <div class="text-center">
+                用户名：<input type="text" id="userNo" required="required"/>
+            </div>
+
+            <div class="text-center pass">
+                密　码：<input type="password" id="password" required="required"/>
+            </div>
+            <div class="text-center signbutt">
+                <button type="submit" class="btn btn-primary btn-block" onclick="login()">登陆</button>
+            </div>
+        </form>
+
+    </div>
+    <div style="color:red" id="errorLogin"></div>
+</div>
+
+<!--<script type="text/javascript" src="../JS/check.js"></script>-->
+<script>
+    function login() {
+        let url = "Login";
+        var req = new XMLHttpRequest();
+        if (window.XMLHttpRequest) {
+            req = new XMLHttpRequest();
+        }
+        else if (window.ActiveXObject) {
+            req = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        let userNo = document.getElementById("userNo").value;
+        let pass = document.getElementById("password").value;
+        let loginError = document.getElementById("errorLogin").value;
+       /* if (userNo == "" || pass == "") {
+            loginError.innerHTML = "请输入用户名和密码";
+            return false;
+        } else {
+            loginError.innerText = "";
+        }*/
+        if (req) {
+            req.open("post", url);
+            //POST方式，必须加入如下头信息设定
+            req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            req.onreadystatechange = () => {
+                alert("aaaaaa");
+
+                if (req.readyState == 4 && req.status == 200) {
+                    alert("hdfusdifhisaudfh");
+                    var json = eval("(" + req.responseText + ")");
+                    //json = JSON.parse(xmlhttp.responseText);
+                    if (json.state == false) {
+                        loginError.innerText = json.info;
+                    } else {
+                        window.location.href = json.href;
+                    }
+                    console.log(json);
+                }
+            };
+            req.send("name=" + userNo + "&password=" + pass + "&url=" + url);
+        }
+
+    }
+
+</script>
+</body>
+</html>
