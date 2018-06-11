@@ -25,14 +25,12 @@
 <div class="row">
     <div class="font col-md-9">TTMS</div>
     <div class="signState col-md-3">
-        <i class="fa fa-user-circle"></i>
         <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
-                <ul class="nav nav-tabs" id="navbar">
+                <ul class="nav nav-tabs">
                     <li class="nav navbar-nav navbar-right" id="logout"><a href="/index.jsp"><span><i
                             class="fa fa-sign-out" aria-hidden="true"></i></span>退出登录</a></li>
-                    <li class="nav navbar-nav navbar-right" id="user"></li>
-                    <li class="nav navbar-nav navbar-right" id="name"></li>
+                    <li class="nav navbar-nav navbar-right" id="user"><a>用户名</a></li>
                 </ul>
             </div>
         </nav>
