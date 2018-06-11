@@ -1,172 +1,79 @@
-
-
-    
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>座位管理</title>
+    <title>座位管理</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" href="view/CSS/bs.css">
+    <link rel="stylesheet" href="view/CSS/index.css">
+    <link rel="stylesheet" href="view/CSS/icheck-bootstrap.css">
+    <link rel="stylesheet" href="view/CSS/icheck-bootstrap.min.css">
+    <link href="view/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<form action="" mothed="post">
-	1
-		1 
-		<input type="checkbox" name="check" value="17" class="check">
-		  
-	2 
-		<input type="checkbox" name="check" value="18" class="check">
-		  
-	3 
-		<input type="checkbox" name="check" value="19" class="check">
-		  
-	4 
-		<input type="checkbox" name="check" value="20" class="check">
-		  
-	5 
-		<input type="checkbox" name="check" value="21" class="check">
-		  
-	6 
-		<input type="checkbox" name="check" value="22" class="check">
-		  
-	7 
-		<input type="checkbox" name="check" value="23" class="check">
-		  
-	8 
-		<input type="checkbox" name="check" value="24" class="check">
-		  
-	</br>2
-		1 
-		<input type="checkbox" name="check" value="25" class="check">
-		  
-	2 
-		<input type="checkbox" name="check" value="26" class="check">
-		  
-	3 
-		<input type="checkbox" name="check" value="27" class="check">
-		  
-	4 
-		<input type="checkbox" name="check" value="28" class="check">
-		  
-	5 
-		<input type="checkbox" name="check" value="29" class="check">
-		  
-	6 
-		<input type="checkbox" name="check" value="30" class="check">
-		  
-	7 
-		<input type="checkbox" name="check" value="31" class="check">
-		  
-	8 
-		<input type="checkbox" name="check" value="32" class="check">
-		  
-	</br>3
-		1 
-		<input type="checkbox" name="check" value="33" class="check">
-		  
-	2 
-		<input type="checkbox" name="check" value="34" class="check">
-		  
-	3 
-		<input type="checkbox" name="check" value="35" class="check">
-		  
-	4 
-		<input type="checkbox" name="check" value="36" class="check">
-		  
-	5 
-		<input type="checkbox" name="check" value="37" class="check">
-		  
-	6 
-		<input type="checkbox" name="check" value="38" class="check">
-		  
-	7 
-		<input type="checkbox" name="check" value="39" class="check">
-		  
-	8 
-		<input type="checkbox" name="check" value="40" class="check">
-		  
-	</br>4
-		1 
-		<input type="checkbox" name="check" value="41" class="check">
-		  
-	2 
-		<input type="checkbox" name="check" value="42" class="check">
-		  
-	3 
-		<input type="checkbox" name="check" value="43" class="check">
-		  
-	4 
-		<input type="checkbox" name="check" value="44" class="check">
-		  
-	5 
-		<input type="checkbox" name="check" value="45" class="check">
-		  
-	6 
-		<input type="checkbox" name="check" value="46" class="check">
-		  
-	7 
-		<input type="checkbox" name="check" value="47" class="check">
-		  
-	8 
-		<input type="checkbox" name="check" value="48" class="check">
-		  
-	</br>5
-		1 
-		<input type="checkbox" name="check" value="49" class="check">
-		  
-	2 
-		<input type="checkbox" name="check" value="50" class="check">
-		  
-	3 
-		<input type="checkbox" name="check" value="51" class="check">
-		  
-	4 
-		<input type="checkbox" name="check" value="52" class="check">
-		  
-	5 
-		<input type="checkbox" name="check" value="53" class="check">
-		  
-	6 
-		<input type="checkbox" name="check" value="54" class="check">
-		  
-	7 
-		<input type="checkbox" name="check" value="55" class="check">
-		  
-	8 
-		<input type="checkbox" name="check" value="56" class="check">
-		  
-	</br>6
-		1 
-		<input type="checkbox" name="check" value="57" class="check">
-		  
-	2 
-		<input type="checkbox" name="check" value="58" class="check">
-		  
-	3 
-		<input type="checkbox" name="check" value="59" class="check">
-		  
-	4 
-		<input type="checkbox" name="check" value="60" class="check">
-		  
-	5 
-		<input type="checkbox" name="check" value="61" class="check">
-		  
-	6 
-		<input type="checkbox" name="check" value="62" class="check">
-		  
-	7 
-		<input type="checkbox" name="check" value="63" class="check">
-		  
-	8 
-		<input type="checkbox" name="check" value="64" class="check">
-		  
-	</br>
-	
-	<button name="status" value="status">更改状态</button>
-</form>
-	
+<script src="view/JS/jquery.min.js"></script>
+<script src="view/JS/bootstrap.min.js"></script>
+<div class="header">
+    <div class="row">
+        <div class="font col-md-9">TTMS</div>
+        <div class="signState col-md-3">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs">
+                        <li class="nav navbar-nav navbar-right" id="logout"><a href="/index.jsp"><span><i
+                                class="fa fa-sign-out" aria-hidden="true"></i></span>退出登录</a></li>
+                        <li class="nav navbar-nav navbar-right" id="user"><a>用户名</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container-fluid">
+    <div class="col-md-3">
+        <jsp:include page="/nav.jsp"></jsp:include>
+    </div>
+
+    <div class="col-md-9">
+        <form action="" mothed="post">
+            <div class="icheck-success">
+                <input type="checkbox" id="11"/>
+                <label for="11">1排1座</label>
+            </div>
+            <div class="icheck-success">
+                <input type="checkbox" id="12"/>
+                <label for="12">1排2座</label>
+            </div>
+            <div class="icheck-success">
+                <input type="checkbox" id="13"/>
+                <label for="13">1排3座</label>
+            </div>
+            <div class="icheck-success">
+                <input type="checkbox" id="14"/>
+                <label for="14">1排4座</label>
+            </div>
+            <div class="icheck-success">
+                <input type="checkbox" id="15"/>
+                <label for="15">1排5座</label>
+            </div>
+            <div class="icheck-success">
+                <input type="checkbox" id="16"/>
+                <label for="16">1排6座</label>
+            </div>
+
+            <div class="row">
+                <input type="Submit" class="btn btn-primary btn-lg"
+                       value="修改状态" onclick="" style="margin-top: 2%">
+            </div>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>

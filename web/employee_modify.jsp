@@ -25,7 +25,7 @@
                         <li class="nav navbar-nav navbar-right" id="user"><a>用户名</a></li>
                     </ul>
                 </div>
-            </nav>
+            </nav>s
         </div>
     </div>
 </div>
