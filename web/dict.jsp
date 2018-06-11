@@ -12,10 +12,6 @@
 <body>
 <script src="view/JS/jquery.min.js"></script>
 <script src="view/JS/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="view/JS/studio.js"></script>
-
-
 <div class="header">
     <div class="row">
         <div class="font col-md-9">TTMS</div>
@@ -41,7 +37,7 @@
 
     <div class="col-md-9">
         <form action="EmployeeDelete" method="post">
-            <table class="table table-hover" id="studioTable" onclick="studioRow()">
+            <table class="table table-hover" id="studioTable" onclick="">
                 <tr>
                     <th></th>
                     <th>ID</th>
@@ -136,10 +132,10 @@
                     class="btn btn-primary btn-lg show-layer" id="addUser">
                 <span class="glyphicon glyphicon-plus"></span><a href="dict_add.jsp" style="color: white">添加</a>
             </button>
-            <input type="Submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"
-                   value="修改" onclick="editStudio()">
+            <input type="Submit" class="btn btn-primary btn-lg"
+                   value="修改" onclick="">
 
-            <input type="Submit" class="btn btn-danger btn-lg" onclick="del()"
+            <input type="Submit" class="btn btn-danger btn-lg" onclick=""
                    value="删除">
         </form>
     </div>
